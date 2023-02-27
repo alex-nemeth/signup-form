@@ -4,47 +4,91 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
-        <script src="main.js" defer></script>
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./main.js" defer></script>
         <title>Signup Form</title>
     </head>
     <body>
         <div class="left">
-            <div class="logo">
-                <img src="" alt="" />
+            <div class="logo"><img src="./logo.png" /></div>
+            <div>
+                <div class="credit">Photo by Aleksandr Popov on Unsplash</div>
             </div>
-            <div class="credit">Photo by X on X</div>
         </div>
         <div class="right">
             <div class="header">
-                <p class="maintext">Lorem ipsum Lorem ipsum Lorem ipsum</p>
-                <p class="extratext">Lorem ipsum Lorem ipsum</p>
+                <p class="maintext">
+                    Placeholder text! Please sign up! We are cool and we will
+                    mail you some cool stuff. Absolutely no spam, really!
+                </p>
+                <p class="extratext">Please?</p>
             </div>
-            <div class="form">
-                <p>Let's go</p>
-                <div class="name">
-                    <label for="firstname">First name</label>
-                    <input type="text" id="firstname" name="firstname" />
-                    <label for="lastname">Last name</label>
-                    <input type="text" id="lastname" name="lastname" />
+            <form action="" class="form">
+                <p class="formtitle">Sign up</p>
+                <div class="formgroup">
+                    <div class="subgroup">
+                        <label for="firstname">First name*</label>
+                        <input
+                            type="text"
+                            id="firstname"
+                            name="firstname"
+                            required
+                        />
+                    </div>
+                    <div class="subgroup">
+                        <label for="lastname">Last name*</label>
+                        <input
+                            type="text"
+                            id="lastname"
+                            name="lastname"
+                            required
+                        />
+                    </div>
                 </div>
-                <div class="emnum">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" />
-                    <label for="phone">Phone number</label>
-                    <input type="text" id="phone" />
+                <div class="formgroup">
+                    <div class="subgroup">
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="email" required />
+                    </div>
+                    <div class="subgroup">
+                        <label for="phone">Phone number</label>
+                        <input type="text" id="phone" name="phone" />
+                    </div>
                 </div>
-                <div class="password">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" />
-                    <label for="confirmpass">Confirm password</label>
-                    <input type="password" id="confirmpass" />
+                <div class="formgroup">
+                    <div class="subgroup">
+                        <label for="password">Password*</label>
+                        <input
+                            type="password"
+                            id="password"
+                            class="password"
+                            name="password"
+                            max="16"
+                            required
+                        />
+                    </div>
+                    <div class="subgroup">
+                        <label for="confirmpass">Confirm password*</label>
+                        <input
+                            type="password"
+                            class="confirmpassword"
+                            name="confirmpassword"
+                            id="confirmpass"
+                            max="16"
+                            required
+                        />
+                        <p class="alert" hidden>Passwords do not match.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="bottom">
-                <button type="submit">Create account</button>
-                <p class="login">Already have an account? Log in</p>
-            </div>
+
+                <button class="submit" type="submit">Create account</button>
+                <div class="bottom">
+                    <p class="login">
+                        Already have an account?
+                        <a href="" class="log">Log in</a>
+                    </p>
+                </div>
+            </form>
         </div>
     </body>
 </html>
