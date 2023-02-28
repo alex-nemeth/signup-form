@@ -29,15 +29,18 @@
                     <div class="subgroup">
                         <label for="firstname">First name*</label>
                         <input
+                            class="firstname"
                             type="text"
                             id="firstname"
                             name="firstname"
                             required
                         />
+                        <p class="alert" id="namealert" hidden></p>
                     </div>
                     <div class="subgroup">
                         <label for="lastname">Last name*</label>
                         <input
+                            class="lastname"
                             type="text"
                             id="lastname"
                             name="lastname"
@@ -48,7 +51,14 @@
                 <div class="formgroup">
                     <div class="subgroup">
                         <label for="email">Email*</label>
-                        <input type="text" id="email" name="email" required />
+                        <input
+                            class="email"
+                            type="text"
+                            id="email"
+                            name="email"
+                            required
+                        />
+                        <p class="alert" id="emailalert" hidden></p>
                     </div>
                     <div class="subgroup">
                         <label for="phone">Phone number</label>
@@ -66,7 +76,7 @@
                             max="16"
                             required
                         />
-                        <p class="alert" hidden></p>
+                        <p class="alert" id="pwalert" hidden></p>
                     </div>
                     <div class="subgroup">
                         <label for="confirmpass">Confirm password*</label>
